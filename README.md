@@ -1,4 +1,5 @@
 ------------------------------1.------------------------------
+
 All  methods are of the JavaScript DOM API used to select elements from HTML.
 getElementById()        :   Selects a single element using its unique id.
 getElementsByClassName():   Selects multiple elements with the same class name (returns HTMLCollection).
@@ -6,6 +7,7 @@ querySelector()         :   Selects the first element that matches a CSS selecto
 querySelectorAll()      :   Selects all elements that match a CSS selector (returns NodeList).
 
 ------------------------------2.------------------------------
+
 To create and insert a new element at first
 Create element using document.createElement()  then
 Add content using innerText or innerHTML and last
@@ -17,6 +19,7 @@ p.innerText = "Hello World";
 document.body.appendChild(p);
 
 ------------------------------3.------------------------------
+
 Event Bubbling is a process where an event starts from the target element and then moves upward to its parent elements.
 
 Example:
