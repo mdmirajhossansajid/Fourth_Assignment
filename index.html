@@ -51,15 +51,15 @@
         <div class="flex flex-wrap gap-4 mb-6">
           <div class="flex-1 min-w-28 bg-white rounded-2xl px-6 py-5 shadow-sm">
             <p class="text-xs text-slate-500 mb-1">Total</p>
-            <p class="font-syne text-4xl font-extrabold text-navy">0</p>
+            <p class="font-syne text-4xl font-extrabold text-navy" id="stat-total" >0</p>
           </div>
           <div class="flex-1 min-w-28 bg-white rounded-2xl px-6 py-5 shadow-sm">
             <p class="text-xs text-slate-500 mb-1">Interview</p>
-            <p class="font-syne text-4xl font-extrabold text-teal">0</p>
+            <p class="font-syne text-4xl font-extrabold text-teal" id="stat-interview" >0</p>
           </div>
           <div class="flex-1 min-w-28 bg-white rounded-2xl px-6 py-5 shadow-sm">
             <p class="text-xs text-slate-500 mb-1">Rejected</p>
-            <p class="font-syne text-4xl font-extrabold text-coral">0</p>
+            <p class="font-syne text-4xl font-extrabold text-coral" id="stat-reject">0</p>
           </div>
         </div>
 
@@ -115,7 +115,7 @@
                     <span>$70,000 - $105,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500 status"
                   >
                     Not Applied
                   </div>
@@ -125,12 +125,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white reject"
                     >
                       Rejected
                     </button>
@@ -138,7 +138,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -159,7 +159,7 @@
                     <span>$130,000 - $175,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500  status"
                   >
                     Not Applied
                   </div>
@@ -169,12 +169,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white  interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white  reject"
                     >
                       Rejected
                     </button>
@@ -182,7 +182,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full  delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -203,7 +203,7 @@
                     <span>$120,000 - $195,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500 status"
                   >
                     Not Applied
                   </div>
@@ -213,12 +213,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white reject"
                     >
                       Rejected
                     </button>
@@ -226,7 +226,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -247,7 +247,7 @@
                     <span>$100,000 - $140,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500 status"
                   >
                     Not Applied
                   </div>
@@ -257,12 +257,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white    interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white   reject"
                     >
                       Rejected
                     </button>
@@ -270,7 +270,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -291,7 +291,7 @@
                     <span>$70,000 - $150,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500 status"
                   >
                     Not Applied
                   </div>
@@ -301,12 +301,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white reject"
                     >
                       Rejected
                     </button>
@@ -314,7 +314,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -335,7 +335,7 @@
                     <span>$115,000 - $135,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500 status"
                   >
                     Not Applied
                   </div>
@@ -345,12 +345,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white reject"
                     >
                       Rejected
                     </button>
@@ -358,7 +358,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -379,7 +379,7 @@
                     <span>$150,000 - $195,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500  status"
                   >
                     Not Applied
                   </div>
@@ -389,12 +389,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white reject"
                     >
                       Rejected
                     </button>
@@ -402,7 +402,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
@@ -423,7 +423,7 @@
                     <span>$100,000 - $200,000</span>
                   </p>
                   <div
-                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500"
+                    class="mb-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-slate-200 text-slate-500  status"
                   >
                     Not Applied
                   </div>
@@ -432,12 +432,12 @@
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-teal text-teal bg-transparent cursor-pointer transition-all duration-150 hover:bg-teal hover:text-white interview"
                     >
                       Interview
                     </button>
                     <button
-                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white"
+                      class="text-xs font-semibold px-4 py-1.5 rounded-md border-2 border-coral text-coral bg-transparent cursor-pointer transition-all duration-150 hover:bg-coral hover:text-white reject"
                     >
                       Rejected
                     </button>
@@ -445,7 +445,7 @@
                 </div>
 
                 <button
-                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full"
+                  class="text-slate-300 hover:text-red-400 transition-colors duration-150 py-2 px-3 cursor-pointer shrink-0 bg-red-300 rounded-full delete"
                 >
                   <i class="fa-regular fa-trash-can text-black pointer-events-none"></i>
                 </button>
