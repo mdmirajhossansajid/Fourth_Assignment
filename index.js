@@ -89,7 +89,13 @@ function updateStat(){
     interviewStat.innerText=counts.interview;
     rejectStat.innerText=counts.rejected;
    available.innerText=counts[currentTab];
-   
+   if(counts[currentTab]<1)
+   {
+    emptyStatus.classList.remove("hidden");
+   } else
+   {
+    emptyStatus.classList.add("hidden");
+   }
 
 }
 updateStat();
