@@ -1,4 +1,4 @@
-------------------------------1.------------------------------
+....------------------------------1.------------------------------...
 
 All  methods are of the JavaScript DOM API used to select elements from HTML.
 getElementById()        :   Selects a single element using its unique id.
